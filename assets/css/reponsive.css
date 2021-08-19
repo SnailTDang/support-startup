@@ -111,6 +111,7 @@
     .content-dark {
         padding: 20px 0;
     }
+    
     .content-menu {
         gap: 30px;
         padding: 75px 15px;
@@ -392,6 +393,9 @@
     }
     .menu-container {
         padding: 25px 15px;
+    }
+    .logo-sub {
+        font-size: 14px;
     }
     .content-menu {
         padding: 0;
