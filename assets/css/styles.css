@@ -545,10 +545,20 @@ a {
     border-radius: 50rem;
     background-color: #757575;
 }
-.icon-radius:hover {
+.fb:hover {
     transition: all 0.3s;
     transform: scale(1.3);
-    background-image: linear-gradient(145deg, #0058ccda, #a7bbff);
+    background-image: linear-gradient(145deg, #0058ccda, #819dfa);
+}
+.tw:hover {
+    transition: all 0.3s;
+    transform: scale(1.3);
+    background-image: linear-gradient(145deg, #1da1f2, #4cafdd)  
+}
+.ig:hover {
+    transition: all 0.3s;
+    transform: scale(1.3);
+    background-image: linear-gradient(145deg, #cd486b, #e95950 ,#fccc63) ; 
 }
 .icon-founder {
     display: flex;
