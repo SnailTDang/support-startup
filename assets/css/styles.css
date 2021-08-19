@@ -561,7 +561,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    background-image: url('../assets/image/imagebg2.jpg');
+    background-image: url('../image/imagebg2.jpg');
 }
 
 .contact-container {
