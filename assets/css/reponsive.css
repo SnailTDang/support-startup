@@ -413,6 +413,9 @@
         top: -25%;
         padding: 8px;
     }
+    .fd-contact {
+        display: block;
+    }
     .menu-mobile {
         
         display: none;
