@@ -530,7 +530,6 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    /* display: flex; */
     text-align: center;
     left: 50%;
     position: absolute;
