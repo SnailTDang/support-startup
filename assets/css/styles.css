@@ -424,7 +424,7 @@ a {
     background-image: linear-gradient(to left, #db8a8a, transparent);
 }
 .sub-img2 {
-    background-image: linear-gradient(45deg, #6adcffd8, transparent);
+    background-image: linear-gradient(135deg, #28c9fad8, transparent);
 }
 .sub-img3{
     background-image: linear-gradient(to right, #50e091d8, transparent);
@@ -526,10 +526,11 @@ a {
     z-index: 2;
 }
 .fd-contact {
+    /* display: none; */
     display: flex;
     width: 100%;
     height: 0%;
-    border-radius: 5px;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -538,18 +539,18 @@ a {
     left: 50%;
     position: absolute;
     top: 0%;
-    /* z-index: 1; */
     transform: translateX(-50%);
-    z-index: -1;
+    transition: all linear 0.5s;
     opacity: 0;
+
 }
 .founder-img:hover .fd-contact {
-    opacity: 01;
+    opacity: 1;
     z-index: 0;
     display: flex;
     width: 100%;
     height: 100%;
-    transition: width 1s, height 01s;
+    transition: height 0.4s;
 }
 
 .icon-radius {
