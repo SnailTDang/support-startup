@@ -261,7 +261,7 @@
     }
     .header-boder{
         display: block;
-        z-index: 1;
+        z-index: 999;
     }
     .header-flex {
         flex-wrap: nowrap;
