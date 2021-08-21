@@ -1,1 +1,1 @@
-# support-startup
+https://snailtdang.github.io/support-startup/#
