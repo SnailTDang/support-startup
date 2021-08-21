@@ -412,6 +412,13 @@
     .menu-flex {
         gap: 20px;
     }
+    .menu-left,
+    .menu-right {
+    max-width: 100%;
+    }
+    .menu-center {
+    width: 100%;
+    }
     .copy{
         font-size: 14px;
         padding: 30px 0;

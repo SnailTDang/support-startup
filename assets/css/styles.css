@@ -683,6 +683,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 130px;
+    justify-content: center;
 }
 
 .menu-flex{
@@ -693,10 +694,10 @@ footer {
 }
 .menu-left,
 .menu-right {
-    width: 370px;
+    max-width: 33.333%;
 }
 .menu-center {
-    width: 170px;
+    width: 16.667%;
 }
 .logo-img{
     display: inline-flex;
