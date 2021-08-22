@@ -466,13 +466,10 @@
         display: block;
         animation: MenuFadeIn linear .3s;  
     }
-    @keyframes MenuFadeIn {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(0);
-        }
+    .formmessenger {
+        width: 95%;
+        right: 5px;
+        height: 90%;
     }
     
 }
