@@ -1,0 +1,114 @@
+.formmessenger {
+    width: 500px;
+    height: 600px;
+    display: none;
+    /* display: block; */
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    z-index: 999;
+    background-color: rgba(71, 102, 94, 0.705);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.822);
+}
+.name-mess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 ;
+}
+.logo-mess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+}
+.img-mess-logo {
+    display: block;
+    width: 80%;
+}
+.name-page {
+    color: white;
+    display: inline;
+    margin-left: 5px;
+}
+.icon-mess {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.fa-minus {
+    color: white;
+    margin-right: 10px;
+    padding: 20px;
+}
+.fa-phone {
+    padding: 20px;
+}
+#messages {
+    height: 430px;
+    width: 100%;
+    border: solid 1px #cecece; 
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+#messages > .mess-text {
+    width: 90%;
+}
+.messtext {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.mess-server {
+    margin-left: 30px;
+    border-radius: 5em;
+    /* float: left; */
+}
+.mess-client {
+    /* float: right; */
+    margin-right: 30px;
+}
+.messtext {
+    background-image: linear-gradient(to bottom, #fe6c02, #fb501e);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 10px;
+}
+.mess-submit {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+}
+#form-submit {
+    padding: 30px 35px;
+}
+.openmess {
+    display: block;
+    animation: MenuFadeIn linear .3s;  
+}
+
+.messenger-icon {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    display: block;
+    color: white;
+    padding: 20px;
+    border-radius: 5em;
+    background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));
+}
+.far {
+    font-size: 40px;
+}
+.hiden {
+    display: none;
+}
