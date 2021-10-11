@@ -217,9 +217,8 @@ a {
 
 .team-overflow {
     margin: auto;
-    max-width: 1170px;
-    padding-top: 50px;;
-    padding-bottom: 50px;
+    max-width: 1200px;
+    padding: 50px 15px;
 }
 .team-container {
     display: flex;
@@ -259,18 +258,15 @@ a {
     display: inline-block;
     padding: 20px 75px;
     border-radius: 0.5rem;
-    /* transition-delay: 2s; */
     background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));
 }
 .button-team:hover {
+    transform: scale(0.98);
     box-shadow: 4px 4px 4px #b8e4f6, -4px -4px 8px #fff;
 }
-@keyframes hover {
-    from {background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));}
-    to {background-image: linear-gradient(to right, rgb(84, 117, 231), rgb(124, 74, 228));}
-}
+
 .team-img {
-    /* margin-left: ; */
+
     flex-grow: 1;
     position: relative;
     width: 600x;
@@ -394,8 +390,8 @@ a {
 }
 
 .tech-container {
-    max-width: 1800px;
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .case-content{
     margin: 0 auto 20px auto;
@@ -411,7 +407,7 @@ a {
     padding: 50px 0;
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 30px;
 }
 .img-z-index {
     z-index: -2;

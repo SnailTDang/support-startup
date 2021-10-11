@@ -35,23 +35,20 @@
         padding: 16px 32px;
     }
     .team-overflow {
-        max-width: 1024px;
-        padding: 75px 0;
+        padding-top: 75px;
+        padding-bottom: 75px;
 
     }
-    .team-section {
+    /* .team-section {
         gap: 10px;
-    }
-    .team-img {
-        height: 450px;
-        width: 400px;
-    }
-    .teamimg-width {
+    } */
+    
+    /* .teamimg-width {
         width: 75%;
-    }
-    .behind-img2 {
+    } */
+    /* .behind-img2 {
         width: 230.26px ;
-    }
+    } */
     .team-section2 {
         flex-direction: row-reverse;
     }
@@ -88,7 +85,6 @@
         padding: 50px 15px;
     }
     .founder-container {
-        max-width: 980px;
         padding-top: 75px;
         padding-bottom: 75px;
     }
