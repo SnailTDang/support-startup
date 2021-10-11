@@ -2,7 +2,8 @@
     width: 500px;
     height: 600px;
     display: none;
-    /* display: block; */
+    display: block;
+    transform: translateX(120%);
     position: fixed;
     bottom: 0;
     right: 50px;
@@ -116,7 +117,13 @@
 }
 .openmess {
     display: block;
-    animation: MenuFadeIn linear .3s;  
+    transform: translateX(0%);
+    transition: all 0.3s linear;
+}
+
+.closemess {
+    display: block;
+    animation: MenuFadeOut linear .3s;  
 }
 @keyframes MenuFadeIn {
     from {
@@ -126,6 +133,7 @@
         transform: translateX(0);
     }
 }
+
 
 .messenger-icon {
     position: fixed;

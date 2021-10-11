@@ -36,7 +36,7 @@ img {
     align-items: center;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 24px;
 }
 
 .logo-page {
@@ -54,10 +54,26 @@ img {
 .main-menu > li {
 
     display: inline-block;
+    padding: 30px 0;
+    position: relative;
 }
 .main-menu > li:hover ul{
    color: #000000;
    display: block;
+}
+.main-menu >li::after {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.5s;
+
+}
+.main-menu >li:hover::after {
+    width: 100%;
 }
 a {
     color: white;
@@ -90,13 +106,14 @@ a {
     padding: 30px 0;
     position: relative;
 }
+
 .sub-nav {
     background-color: rgba(41, 36, 36, 0.87);
     display: none;
     min-width: 200px;
-    margin-top: 30px;
     position:absolute;
     left: 0;
+    top: calc(100% + 1px);
 }
 .homepage {
     display: block;
@@ -235,20 +252,18 @@ a {
 
 }
 .button-team {
+    transition: all 0.3s;
+    box-shadow: 4px 4px 10px 0 #2771b2, -3px -4px 5px 0 #ebf9ff, -1px -1px 3px 0 #fff, 1px 1px 1px 0 #bde4f4;
     font-size: 16px;
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 20px 75px;
     border-radius: 0.5rem;
-    transition-delay: 2s;
+    /* transition-delay: 2s; */
     background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));
 }
 .button-team:hover {
-    animation-name: hover;
-    animation-duration: 5s;
-    /* animation-iteration-count: infinite; */
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+    box-shadow: 4px 4px 4px #b8e4f6, -4px -4px 8px #fff;
 }
 @keyframes hover {
     from {background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));}
