@@ -1,7 +1,6 @@
 .formmessenger {
     width: 500px;
     height: 600px;
-    display: none;
     display: block;
     transform: translateX(120%);
     position: fixed;
@@ -9,6 +8,7 @@
     right: 50px;
     z-index: 999;
     background-color: #0076b68f;
+    transition: all;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.822);
@@ -141,15 +141,16 @@
     padding: 25px 25px;
 }
 .openmess {
-    display: block;
+
     transform: translateX(0%);
-    transition: all 0.3s linear;
+    animation: MenuFadeIn linear .3s;
 }
 
 .closemess {
-    display: block;
+    transform: translateX(120%);
     animation: MenuFadeOut linear .3s;  
 }
+
 @keyframes MenuFadeIn {
     from {
         transform: translateX(100%);
@@ -159,11 +160,20 @@
     }
 }
 
+@keyframes MenuFadeOut {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
 
 .messenger-icon {
     position: fixed;
-    bottom: 80px;
-    right: 0;
+    bottom: 50%;
+    right: 20px;
     display: block;
     color: white;
     padding: 20px;

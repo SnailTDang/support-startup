@@ -27,12 +27,17 @@
     
         function OpenMess() {
             mess.classList.add('openmess')
+            mess.classList.remove('closemess')
         }
     
         function CloseMess() {
-            mess.classList.remove('openmess')
+            mess.classList.remove('openmess')  
         }
-       
+
+        function CloseMess() {
+            mess.classList.add('closemess')
+        }
+
         
     
         for (closeBtn of closeBtns) {
