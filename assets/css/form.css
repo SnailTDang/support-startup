@@ -1,7 +1,6 @@
 .formmessenger {
     width: 500px;
-    display: block;
-    /* transform: translateX(120%); */
+    transform: translateX(120%);
     position: fixed;
     bottom: 0;
     right: 50px;
