@@ -60,37 +60,62 @@
     list-style: none;
     color: white;
     font-size: 20px;
+    padding-bottom: 10px;
+
 }
 .text-mess {
     height: 420px;
     width: 100%;
     border: solid 1px #cecece; 
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
+.text-mess::-webkit-scrollbar {
+    width: 8px;
+}
+.text-mess::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 50rem;
+}
+.text-mess::-webkit-scrollbar-track{
+    background-color: #f1f1f100;
 }
 #messages > .mess-text {
-    width: 90%;
+    display: flex;
+
 }
 .messtext {
+
+    max-width: 70%;
+    display: block;
     padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 5px; 
+    word-break: break-all;
 }
 .mess-server {
-    margin-left: 30px;
-    border-radius: 5em;
+    border-radius: 1em;
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    /* float: left; */
+
+}
+.client {
+    flex-direction: row-reverse;
+    flex-grow: 20px;
+}
+.space {
+    flex-grow: 1;
+}
+
+.server {
+    flex-grow: 1;
 }
 .mess-client {
-    /* float: right; */
-    margin-right: 30px;
-    border-radius: 5em;
+    border-radius:1em;
     background-color: #21D4FD;
     background-image: linear-gradient(-171deg, #21D4FD 0%, #B721FF 100%);
-}
-.messtext {
-    
 }
 .form-group {
     display: block;
