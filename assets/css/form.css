@@ -1,8 +1,7 @@
 .formmessenger {
     width: 500px;
-    height: 600px;
     display: block;
-    transform: translateX(120%);
+    /* transform: translateX(120%); */
     position: fixed;
     bottom: 0;
     right: 50px;
@@ -17,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 ;
+    /* margin: 10px 0 ; */
 }
 .logo-mess {
     display: flex;
@@ -59,14 +58,14 @@
 #messages {
     list-style: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
 
 }
 .text-mess {
     height: 420px;
     width: 100%;
-    border: solid 1px #cecece; 
+    border-top: solid 1px #cecece; 
     display: flex;
     flex-direction: column-reverse;
     overflow-x: hidden;
@@ -124,18 +123,41 @@
 
 }
 
-.form-control {
+textarea {
+
+    place-content: #ffff;
+    color: #ffff;
+    background-color: #3f627200;
+    border: none;
+    overflow: auto;
+    outline: none; 
     width: 100%;
-    padding: 10px 10px;
+    padding: 15px 20px;
     min-height: 80px;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+
 }
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.btn-success {
+    border-radius: 50%;
+
+}
+
 .mess-submit {
     display: flex;
-    position: absolute;
-    bottom: 5px;
-    right: 0;
-    left: 0;
+    background-color: #3f6272be;
     height: 80px;
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+
 }
 #form-submit {
     padding: 25px 25px;
@@ -172,7 +194,7 @@
 
 .messenger-icon {
     position: fixed;
-    bottom: 57%;
+    bottom: 55%;
     right: 20px;
     display: block;
     color: white;
@@ -180,7 +202,7 @@
     border-radius: 5em;
     background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));
 }
-.far {
+.fas,.far{
     font-size: 30px;
 }
 .hiden {
