@@ -454,12 +454,17 @@
         background-image: linear-gradient(145deg, #cd486b, #e95950 ,#fccc63) ; 
     }
     .menu-mobile {
-        
-        display: none;
+        display: block;
+        /* transform: translateX(100%); */
     }
     .open {
-        display: block;
+        transform: translateX(0%);
         animation: MenuFadeIn linear .3s;  
+    }
+
+    .close {
+        transform: translateX(100%);
+        animation: MenuFadeOut linear .3s;
     }
     .formmessenger {
         width: 95%;

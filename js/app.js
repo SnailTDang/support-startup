@@ -19,10 +19,12 @@
     
         function OpenMenu() {
             menu.classList.add('open')
+            menu.classList.remove('close')
         }
     
         function CloseMenu() {
             menu.classList.remove('open')
+            menu.classList.add('close')
         }
     
         function OpenMess() {
@@ -32,11 +34,9 @@
     
         function CloseMess() {
             mess.classList.remove('openmess')  
-        }
-
-        function CloseMess() {
             mess.classList.add('closemess')
         }
+
 
         
     
