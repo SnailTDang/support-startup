@@ -55,33 +55,148 @@
 
 
 
-        // let messages = [
-        //     {
-        //         id: 1,
-        //         name: 'server',
-        //         message: 'Hiiii bạn'
-        //     },
-        //     {
-        //         id: 2,
-        //         name: 'client',
-        //         message: 'Helloo bạn'
-        //     }
-        // ];
-        // var newMess = messages.map((message)=> {
-        //     if (message.name === 'server') {
-        //         return `
-        //         <div>
-        //             <span class="messtext mess-server">${message.mess}</span>
-        //         </div>
-        //         `
-        //     } else if (message.name === 'client') {
-        //         return `
-        //         <div>
-        //             span class="messtext mess-server">${message.mess}</span>
-        //         </div>
-        //         `
-        //     }
-        // })
-        // console.log(newMess)
-        // document.getElementsByClassName("server").innerHTML = newMess;
-        // document.getElementsByClassName("client").innerHTML = newMess;
+        let messages = [
+            {
+                id: 1,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',  
+                message: 'Hiiii bạn'
+            },
+            {
+                id: 2,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'nonoasdasdas bạn'
+            },
+            {
+                id: 3,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+                message: 'Hiiii ádasdasdasbạn'
+            },
+            {
+                id: 4,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Hellooasssssssssssssssssssssssssssssssssssss bạn'
+            },
+            {
+                id: 5,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+                message: 'Hiiiiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bạn'
+            },
+            {
+                id: 6,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạaaaaaaaaaaaaaaaaaaaaaaaaaaaaan'
+            },
+            {
+                id: 7,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiigggggggggggggggggggggggggggggggggggggggggi bạn'
+            },
+            {
+                id: 8,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloofffffffffffffffffffffffffff bạn'
+            },
+            {
+                id: 9,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiffffaaaaaaaaaaaaaaaaaaaaaii bạn'
+            },
+            {
+                id: 10,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Hellooaaatttttttttttttttttttttttttttttttttttttttttttttttttttttttt bạn'
+            },
+            {
+                id: 11,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: '  Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec. Donec ac viverra in scelerisque leo.'
+            },
+            {
+                id: 12,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: '               Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec.'
+            },
+            {
+                id: 13,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiii bạn'
+            },
+            {
+                id: 14,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạn'
+            },
+            {
+                id: 15,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiii bạn'
+            },
+            {
+                id: 16,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạn'
+            },
+            {
+                id: 17,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạn'
+            },
+            {
+                id: 18,
+                name: 'server',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiii bạn'
+            },
+            {
+                id: 19,
+                name: 'client',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạn'
+            }
+        ];
+        var newMess = messages.map((message)=> {
+            if (message.name === 'server') {
+                return `
+                <div class="mess-text server">
+                    <img src="${message.avatar}" class="avatar">
+                    <span class="messtext mess-server">${message.message}</span>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                </div>
+                `
+            } else if (message.name === 'client') {
+                return `
+                <div class="mess-text client">
+                    <img src="${message.avatar}" class="avatar">
+                    <span class="messtext mess-client">${message.message}</span>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                </div>
+                `
+            }
+        })
+        console.log(newMess)
+        document.getElementById("messages").innerHTML = newMess.join('');
