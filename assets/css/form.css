@@ -36,6 +36,7 @@
 .icon-mess {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 .icon {
@@ -45,10 +46,10 @@
 }
 .fa-minus {
     margin-right: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 .fa-phone {
-    padding: 20px;
+    padding: 10px;
 }
 .icon:hover {
     border-radius: 50%;
