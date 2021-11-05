@@ -202,17 +202,18 @@
 
 .messenger-icon {
     position: fixed;
-    bottom: 55%;
+    bottom: 60%;
     right: 20px;
     display: block;
     color: white;
     padding: 20px;
     border-radius: 5em;
+    transition: linear .2s 0.1s;
     background-image: linear-gradient(to right, rgb(124, 74, 228), rgb(84, 117, 231));
 }
 .fas,.far{
     font-size: 30px;
 }
 .hiden {
-    display: none;
+    transform: scale(0);
 }
