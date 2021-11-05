@@ -52,4 +52,36 @@
         openMess.addEventListener('click',OpenMess)
         closeMess.addEventListener('click',CloseMess)
         hidenmess.addEventListener('click', HidenMess)
-    
+
+
+
+        // let messages = [
+        //     {
+        //         id: 1,
+        //         name: 'server',
+        //         message: 'Hiiii bạn'
+        //     },
+        //     {
+        //         id: 2,
+        //         name: 'client',
+        //         message: 'Helloo bạn'
+        //     }
+        // ];
+        // var newMess = messages.map((message)=> {
+        //     if (message.name === 'server') {
+        //         return `
+        //         <div>
+        //             <span class="messtext mess-server">${message.mess}</span>
+        //         </div>
+        //         `
+        //     } else if (message.name === 'client') {
+        //         return `
+        //         <div>
+        //             span class="messtext mess-server">${message.mess}</span>
+        //         </div>
+        //         `
+        //     }
+        // })
+        // console.log(newMess)
+        // document.getElementsByClassName("server").innerHTML = newMess;
+        // document.getElementsByClassName("client").innerHTML = newMess;
