@@ -5,7 +5,7 @@
     bottom: 0;
     right: 50px;
     z-index: 999;
-    background-color: #0076b68f;
+    background-color: #a1a1a1;
     transition: all;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -134,8 +134,8 @@
 .form-control {
 
     place-content: #ffff;
-    color: #ffff;
-    background-color: #3f627200;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
     border: none;
     overflow: auto;
     outline: none; 
@@ -151,7 +151,7 @@
 
 }
 .form-control::-webkit-input-placeholder {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .btn-success {
@@ -161,7 +161,7 @@
 
 .mess-submit {
     display: flex;
-    background-color: #3f6272be;
+    background-color: #ffffff;
     height: 80px;
     border-top-right-radius: 50rem;
     border-bottom-right-radius: 50rem;
