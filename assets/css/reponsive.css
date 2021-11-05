@@ -455,7 +455,7 @@
     }
     .menu-mobile {
         display: block;
-        /* transform: translateX(100%); */
+        transform: translateX(100%);
     }
     .open {
         transform: translateX(0%);
