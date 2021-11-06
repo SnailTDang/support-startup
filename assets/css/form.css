@@ -86,10 +86,11 @@
 #messages > .mess-text {
     display: flex;
     align-items: flex-end;
-    padding: 5px; 
+    padding: 10px 5px; 
 
 }
 .messtext {
+    position: relative;
     max-width: 70%;
     display: block;
     padding: 15px;
@@ -102,7 +103,17 @@
     /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
 
 }
-
+.name {
+    position: absolute;
+    top: -15px;
+    font-size: 11px;
+}
+.name-client {
+    right: 0px;
+}
+.name-server {
+    left: 0px;
+}
 .avatar {
     width: 25px;
     height: 25px;

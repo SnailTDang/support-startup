@@ -58,140 +58,179 @@
         let messages = [
             {
                 id: 1,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',  
                 message: 'Hiiii bạn'
             },
             {
                 id: 2,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'nonoasdasdas bạn'
             },
             {
                 id: 3,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
                 message: 'Hiiii ádasdasdasbạn'
             },
             {
                 id: 4,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Hellooasssssssssssssssssssssssssssssssssssss bạn'
             },
             {
                 id: 5,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
                 message: 'Hiiiiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bạn'
             },
             {
                 id: 6,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloo bạaaaaaaaaaaaaaaaaaaaaaaaaaaaaan'
             },
             {
                 id: 7,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: 'Hiiigggggggggggggggggggggggggggggggggggggggggi bạn'
             },
             {
                 id: 8,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloofffffffffffffffffffffffffff bạn'
             },
             {
                 id: 9,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: 'Hiiffffaaaaaaaaaaaaaaaaaaaaaii bạn'
             },
             {
                 id: 10,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Hellooaaatttttttttttttttttttttttttttttttttttttttttttttttttttttttt bạn'
             },
             {
                 id: 11,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: '  Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec. Donec ac viverra in scelerisque leo.'
             },
             {
                 id: 12,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: '               Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec.'
             },
             {
                 id: 13,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: 'Hiiii bạn'
             },
             {
                 id: 14,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloo bạn'
             },
             {
                 id: 15,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: 'Hiiii bạn'
             },
             {
                 id: 16,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloo bạn'
             },
             {
                 id: 17,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloo bạn'
             },
             {
                 id: 18,
-                name: 'server',
+                role: 'server',
+                name: 'Support',
                 avatar: './assets/image/avatar_server.jpg',
 
                 message: 'Hiiii bạn'
             },
             {
                 id: 19,
-                name: 'client',
+                role: 'client',
+                name: 'You',
                 avatar: './assets/image/avatar_client.jpg',
                 message: 'Helloo bạn'
-            }
+            },
+            {
+                id: 18,
+                role: 'server',
+                name: 'Support',
+                avatar: './assets/image/avatar_server.jpg',
+
+                message: 'Hiiii bạn'
+            },
+            {
+                id: 19,
+                role: 'client',
+                name: 'You',
+                avatar: './assets/image/avatar_client.jpg',
+                message: 'Helloo bạn'
+            },
+
         ];
         var newMess = messages.map((message)=> {
-            if (message.name === 'server') {
+            if (message.role === 'server') {
                 return `
                 <div class="mess-text server">
                     <img src="${message.avatar}" class="avatar">
-                    <span class="messtext mess-server">${message.message}</span>
+                    <span class="messtext mess-server">${message.message}
+                        <div class="name name-server">${message.name}</div>
+                    </span>
                     <div class="space"></div>
                     <div class="space"></div>
                 </div>
                 `
-            } else if (message.name === 'client') {
+            } else if (message.role === 'client') {
                 return `
                 <div class="mess-text client">
                     <img src="${message.avatar}" class="avatar">
-                    <span class="messtext mess-client">${message.message}</span>
+                    <span class="messtext mess-client">${message.message}
+                        <div class="name name-client">${message.name}</div>
+                    </span>
                     <div class="space"></div>
                     <div class="space"></div>
                 </div>
