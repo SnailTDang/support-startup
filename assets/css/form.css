@@ -127,7 +127,6 @@
 }
 .form-group {
     display: block;
-    height: 80px;
     width: 100%;
 
 }
@@ -141,9 +140,8 @@
     overflow: auto;
     outline: none; 
     width: 100%;
-    padding: 15px 20px;
-    min-height: 80px;
-
+    padding: 10px;
+    min-height: 70px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -161,15 +159,16 @@
 }
 
 .mess-submit {
+    height: 70px;
     display: flex;
     background-color: #ffffff;
-    height: 80px;
     border-top-right-radius: 50rem;
     border-bottom-right-radius: 50rem;
 
 }
 #form-submit {
-    padding: 25px 25px;
+    height: 100%;
+    padding: 20px;
 }
 .openmess {
 
