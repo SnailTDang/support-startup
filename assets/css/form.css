@@ -172,14 +172,16 @@
 .mess-submit {
     height: 70px;
     display: flex;
+    align-items: center;
     background-color: #ffffff;
     border-top-right-radius: 50rem;
     border-bottom-right-radius: 50rem;
 
 }
 #form-submit {
-    height: 100%;
-    padding: 20px;
+    margin-right: 5px;
+    height: 60px;
+    padding: 15px;
 }
 .openmess {
 
