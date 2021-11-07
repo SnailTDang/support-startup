@@ -613,6 +613,7 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     background-image: url('../image/imagebg2.jpg');
+    background-attachment: fixed;
 }
 
 .contact-container {
