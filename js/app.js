@@ -227,7 +227,6 @@
             } else if (message.role === 'client') {
                 return `
                 <div class="mess-text client">
-                    <img src="${message.avatar}" class="avatar">
                     <span class="messtext mess-client">${message.message}
                         <div class="name name-client">${message.name}</div>
                     </span>
